@@ -50,7 +50,7 @@ class DoublyCircularLinkedList:
         if index==self.count:
             return self.add_at_tail(data)
         new_node=Node(data)
-        curr_noce=self.head
+        curr_node=self.head
         for i in range(index):
             curr_node=curr_node.next
         new_node.previous=curr_node.previous
